@@ -23,12 +23,14 @@ This plugin monitors the performance metrics of your Apache ActiveMQ instances a
 ##### Linux 
 
 - Create a directory "activemq" under Site24x7 Linux Agent plugin directory - 
+
       Linux (Root)      ->   /opt/site24x7/monagent/plugins/activemq
       Linux (Non Root)  ->   /home/<user_name>/site24x7/monagent/plugins/activemq
 
 ##### Windows 
 
 - Create a directory "Site24x7_ActiveMQ" under Site24x7 Windows Agent plugin directory - 
+
       Windows           ->   C:\Program Files (x86)\Site24x7\WinAgent\monitoring\Plugins\activemq
       
 ---
