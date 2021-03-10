@@ -24,6 +24,8 @@ This plugin monitors the performance metrics of your Apache ActiveMQ instances a
 
 - Create a directory "activemq" under Site24x7 Windows Agent plugin directory - 
       Windows           ->   C:\Program Files (x86)\Site24x7\WinAgent\monitoring\Plugins\activemq
+      
+---
 
 - Download all the files in "activemq" folder and place it under the "activemq" directory
 
