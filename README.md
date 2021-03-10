@@ -37,8 +37,8 @@ This plugin monitors the performance metrics of your Apache ActiveMQ instances a
 
 - Download all the files in "activemq" folder and place it under the "activemq" directory
 
-	  wget https://raw.githubusercontent.com/mrkksparrow/Site24x7_ActiveMQ/main/activemq.py?token=AJUVBT456SOY4BCPY7OW4P3AKIDTU
-	  wget https://raw.githubusercontent.com/mrkksparrow/Site24x7_ActiveMQ/main/acticemq.cfg?token=AJUVBTY6WNAMQ6F6FXOVVSTAKIDRY
+	  wget https://raw.githubusercontent.com/mrkksparrow/Site24x7_ActiveMQ/main/activemq.py
+	  wget https://raw.githubusercontent.com/mrkksparrow/Site24x7_ActiveMQ/main/acticemq.cfg
 	
 - Configure the keys to be monitored, as mentioned in the configuration section below.
 
