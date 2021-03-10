@@ -10,6 +10,12 @@ This plugin monitors the performance metrics of your Apache ActiveMQ instances a
 - Plugin Uses "jmxquery" python library. This module is used to execute the jmx query and get data. Execute the below command to install python jmxquery modeule in your server.  
 
 		pip install jmxquery
+		
+- JMX connection should be enabled in the Apache ActiveMQ installation folder. To enable the JMX connection follow the below steps: Open conf/activemq.xml inside the installation folder of Apache ActiveMQ and change the following attributes
+
+		<managementContext>
+    		     <managementContext createConnector="true" connectorPort="1099"/>
+		</managementContext>
 
 
 ### Plugin installation
