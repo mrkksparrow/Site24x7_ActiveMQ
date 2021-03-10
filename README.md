@@ -49,32 +49,32 @@ The agent will automatically execute the plugin within five minutes and send per
 
 ### Metrics Captured
 ---
-Memory Percent Usage - “memory_percent_usage” metric calculates the percentage of memory used by the given Broker in your ActiveMQ Setup. [percent]
+	memory_percent_usage - metric calculates the percentage of memory used by the given Broker in your ActiveMQ Setup. [percent]
 
-Storage Percent Usage - “storage_percent_usage” metric calculates the percentage of storage used by the given Broker in your ActiveMQ Setup. [percent]
+	storage_percent_usage - metric calculates the percentage of storage used by the given Broker in your ActiveMQ Setup. [percent]
 
-Temp Percent Usage - “temp_percent_usage” metric calculates the percentage of temp used by the given Broker in your ActiveMQ Setup. [percent]
+	temp_percent_usage - metric calculates the percentage of temp used by the given Broker in your ActiveMQ Setup. [percent]
 
-Average Enqueue Time - “avg_enqueue_time” metric calculate the average amount of time, the messages remained enqueued in the queue of the given Broker of your ActiveMQ Setup. [millisecond]
+	avg_enqueue_time - metric calculate the average amount of time, the messages remained enqueued in the queue of the given Broker of your ActiveMQ Setup. [millisecond]
 
-Minimum Enqueue Time - “min_enqueue_time” metric calculate the minimum amount of time, the messages remained enqueued in the queue of the given Broker of your ActiveMQ Setup. [millisecond]
+	min_enqueue_time - metric calculate the minimum amount of time, the messages remained enqueued in the queue of the given Broker of your ActiveMQ Setup. [millisecond]
 
-Maximum Enqueue Time - “max_enqueue_time” metric calculate the maximum amount of time, the messages remained enqueued in the queue of the given Broker of your ActiveMQ Setup. [millisecond]
+	max_enqueue_time - metric calculate the maximum amount of time, the messages remained enqueued in the queue of the given Broker of your ActiveMQ Setup. [millisecond]
 
-Dequeue Count - “dequeue_count” metric calculate the number of messages that remained dequeued in the queue of the given Broker of your ActiveMQ Setup. [message]
+	dequeue_count - metric calculate the number of messages that remained dequeued in the queue of the given Broker of your ActiveMQ Setup. [message]
+	
+	enqueue_count - metric calculate the number of messages that remained enqueued in the queue of the given Broker of your ActiveMQ Setup. [message]
 
-Enqueue Count - “enqueue_count” metric calculate the number of messages that remained enqueued in the queue of the given Broker of your ActiveMQ Setup. [message]
+	consumer_count - metric counts and records the number of consumers connected in the queue of the given Broker of your ActiveMQ Setup. [count]
 
-Consumer Count - “consumer_count” metric counts and records the number of consumers connected in the queue of the given Broker of your ActiveMQ Setup. [count]
+	producer_count - metric counts and records the number of producers connected in the queue of the given Broker of your ActiveMQ Setup. [count]
 
-Producer Count - “producer_count” metric counts and records the number of producers connected in the queue of the given Broker of your ActiveMQ Setup. [count]
+	dispatch_count - metric counts and records the number of messages that have been dispatched in the queue of the given Broker of your ActiveMQ Setup. [message]
 
-Dispatch Count - “dispatch_count”  metric counts and records the number of messages that have been dispatched in the queue of the given Broker of your ActiveMQ Setup. [message]
+	queue_size - metric calculate the number of messages that remained in the queue of the given Broker of your ActiveMQ Setup. [message]
 
-Queue Size - “queue_size” metric calculate the number of messages that remained in the queue of the given Broker of your ActiveMQ Setup. [message]
+	memory_percent - metric calculate the percentage of memory currently used in the queue of the given Broker of your ActiveMQ Setup. [percent]
 
-Memory Percent - “memory_percent” metric calculate the percentage of memory currently used in the queue of the given Broker of your ActiveMQ Setup. [percent]
+	expired_count - metric calculate the number of messages that have been expired in the queue of the given Broker of your ActiveMQ Setup. [message]
 
-Expired Count - “expired_count” metric calculate the number of messages that have been expired in the queue of the given Broker of your ActiveMQ Setup. [message]
-
-In Flight Count - “in_flight_count” metric calculate the number of messages that have been in flight in the queue of the given Broker of your ActiveMQ Setup. [message]		
+	in_flight_count - metric calculate the number of messages that have been in flight in the queue of the given Broker of your ActiveMQ Setup. [message]		
