@@ -29,24 +29,24 @@ QUERY = ""
 result_json = {}
 
 METRIC_UNITS = {
-    "memory_percent_usage": "percent",
-    "store_percent_usage": "percent",
-    "temp_percent_usage": "percent",
-    "average_enqueue_time": "milliseconds",
-    "consumer_count": "",
-    "dequeue_count": "messages",
-    "dispatch_count": "messages",
-    "enqueue_count": "messages",
-    "expired_count": "messages",
-    "in_flight_count": "messages",
-    "max_enqueue_time": "milliseconds",
-    "min_enqueue_time": "milliseconds",
-    "producer_count": "",
-    "queue_size": "messages"
+    "broker_memory_percent" : "percent",
+    "queue_memory_percent" : "percent",
+    "store_percent_usage" : "percent",
+    "temp_percent_usage" : "percent",
+    "average_enqueue_time" : "milliseconds",
+    "consumer_count" : "",
+    "dequeue_count" : "messages",
+    "dispatch_count" : "messages",
+    "enqueue_count" : "messages",
+    "expired_count":  "messages",
+    "in_flight_count" : "messages",
+    "max_enqueue_time" : "milliseconds",
+    "min_enqueue_time" : "milliseconds",
+    "producer_count" : "",
+    "queue_size" : "messages"
 }
 
 metric_map = {
-    "MemoryPercentUsage": "memory_percent_usage",
     "StorePercentUsage": "store_percent_usage",
     "TempPercentUsage": "temp_percent_usage",
     "AverageEnqueueTime": "average_enqueue_time",
@@ -74,7 +74,11 @@ def mbean_attributes(jmxConnection, OUERY):
             output = output.split('/')
             output = output[1]
             output = output.split(' = ')
-            if output[0] in metric_map.keys():
+            if output[0] == "MemoryPercentUsage" and "destinationType" in OUERY:
+                result_json["queue_memory_percent"] = output[1]
+            elif output[0] == "MemoryPercentUsage" and "destinationType" not in OUERY:
+                result_json["broker_memory_percent"] = output[1]
+            elif output[0] in metric_map.keys():
                 result_json[metric_map[output[0]]] = output[1]
 
     except Exception as e:
